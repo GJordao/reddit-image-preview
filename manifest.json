@@ -1,0 +1,14 @@
+{
+    "name": "PreviewImage",
+    "version": "0.0.1",
+    "description": "Prview an image on reddit when hovering",
+    "permissions": ["activeTab", "declarativeContent"],
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "css": ["imageMarker.css"],
+            "js": ["imageMarker.js"]
+        }
+    ],
+    "manifest_version": 2
+}
